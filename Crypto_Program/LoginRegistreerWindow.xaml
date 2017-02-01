@@ -1,0 +1,31 @@
+﻿<Window x:Class="Crypto_Program.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Lavender"
+        Title="Crypto Program - Inloggen / Registreren" Height="267.667" Width="718.001" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Icon="lock.ico">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Crypto_Program;component/BSFoto.jpg"/>
+        </Grid.Background>
+        <GroupBox x:Name="RegistreerGroupBox" Header="Registreren" HorizontalAlignment="Left" Margin="14,17,0,0" VerticalAlignment="Top" Height="204" Width="324" FontFamily="Courier New" FontWeight="Bold">
+            <Grid HorizontalAlignment="Left" Height="175" Margin="10,10,-2,-3" VerticalAlignment="Top" Width="304">
+                <TextBox x:Name="reg_usernameTextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="172,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" ToolTip="Kies een gebruikersnaam." IsUndoEnabled="True"/>
+                <PasswordBox x:Name="reg_UserPasswordPasswordBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="172,83,0,0" VerticalAlignment="Top" Width="122" Height="25" ToolTip="Kies een wachtwoord"/>
+                <Button x:Name="registreerButton" Content="Registreren" HorizontalAlignment="Left" Margin="46,147,0,0" VerticalAlignment="Top" Width="129" Click="registreerButton_Click" FontFamily="Courier New" FontWeight="Bold"/>
+                <Label x:Name="reg_UserPasswordLabel" Content="Wachtwoord:" HorizontalAlignment="Left" Margin="8,83,0,0" VerticalAlignment="Top" Width="160" Height="30" FontFamily="Courier New" FontWeight="Bold" FontSize="17"/>
+                <Label x:Name="reg_usernameLabel" Content="Gebruikersnaam:" HorizontalAlignment="Left" Margin="8,38,0,0" VerticalAlignment="Top" Height="30" FontFamily="Courier New" FontWeight="Bold" Width="160" FontSize="17"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox x:Name="LoginGroupBox" Header="Inloggen" FontFamily="Courier New" FontWeight="Bold" HorizontalAlignment="Left" Margin="343,17,0,0" VerticalAlignment="Top" Height="204" Width="359">
+            <Grid HorizontalAlignment="Left" Height="175" Margin="10,10,-2,-3" VerticalAlignment="Top" Width="339">
+                <TextBox x:Name="log_UsernameTextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="191,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" ToolTip="Geef uw gebruikersnaam in."/>
+                <PasswordBox x:Name="log_UserPasswordPasswordBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="191,83,0,0" VerticalAlignment="Top" Width="122" Height="25" ToolTip="Geef uw wachtwoord in."/>
+                <Button x:Name="log_LoginButton" Content="Inloggen" HorizontalAlignment="Left" Margin="80,147,0,0" VerticalAlignment="Top" Width="129" Click="loginButton_Click" FontFamily="Courier New" FontWeight="Bold"/>
+                <Label x:Name="log_UserPasswordLabel" Content="Wachtwoord:" HorizontalAlignment="Left" Margin="8,83,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontWeight="Bold" Width="160" Height="30" FontSize="17"/>
+                <Label x:Name="log_UsernameLabel" Content="Gebruikersnaam:" HorizontalAlignment="Left" Margin="8,38,0,0" VerticalAlignment="Top" Height="30" FontFamily="Courier New" FontWeight="Bold" Width="160" FontSize="17"/>
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>

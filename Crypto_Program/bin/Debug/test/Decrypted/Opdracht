@@ -1,0 +1,17 @@
+Bijgevoegd vind je het bestand BoundInfo.ini
+
+Het is de bedoeling om een programma te schrijven dat de waarden van dit bestand in een gemakkelijke GUI aan te passen m.b.v. de .Net Componenten.
+Lees hiervoor het bestand BoundInfo.ini in en genereer voor iedere regel een BoundInfo object.
+
+Je zorgt ervoor dat deze objecten mooi in een listbox komen te staan binnen je project.
+Je voorziet een functionaliteit om de objecten aan te kunnen passen en schrijft deze terug weg naar het bestand
+Om performatie redenen, mag je enkel wegschrijven naar het bestand bij het klikken van de save File knop op het menu, zorg dus voor een aparte save methode die de objecten afzonderlijk opslaat.
+
+GUI: http://prntscr.com/alwf4i
+
+Zorg ervoor dat je de labels van buiten het programma kunt aanpassen met een waarde verschillend van Unknown01. (je moet de tekst van het label kunnen aanpassen.)
+
+Zorg voor een functionaliteit die je nieuwe boundInfo items laat toevoegen.
+
+Bij het selecteren van een ander item, moeten de waardes in de tekstboxen aangepast worden naar de waardes van dit object.
+LET OP: indien je een ander item selecteerd, moeten de aangepaste waardes van het vorige object in het juiste object opgeslagen worden.
